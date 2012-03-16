@@ -1,0 +1,55 @@
+body {
+background:
+white url(ui_theme/images/ui-bg_fine-grain_15_ffffff_60x60.png) 50% 50% repeat;
+font-family: Arial;
+}
+
+div#notice {
+	background-color: #FF0000;
+	color: #fff;
+	width: 200px;
+	text-align: center;
+
+	margin-bottom: 20px;
+}
+
+.field_with_errors {
+	background-color: #FF0000;
+	color: #fff;
+	width: 258px;
+}
+
+.event-link {
+	font-size: 12px;
+	color: silver;
+	text-decoration: none;
+	z-index: 1000;
+}
+
+#day-block {
+	width: 800px;
+}
+
+#day-total-time {
+	float: right;
+	padding: 20px 0px 5px 0px;
+}
+
+span.work-type {
+	float: left;
+	font-size: 18px;
+	border-bottom: 1px dashed red;
+	margin: 20px 0px 20px 0px;
+	font-weight: bold;
+}
+
+td.record {
+	width: 200px;
+	border: 1px solid silver;
+	padding: 5px 5px 5px 5px;
+}
+
+table.records {
+	width: 100%;
+
+}

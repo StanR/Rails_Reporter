@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reporter</title>
+  <%= stylesheet_link_tag    "style", :media => "all" %>
+  <%= stylesheet_link_tag    "ui_theme/theme", :media => "all" %>
+  <%= stylesheet_link_tag    "fullcalendar", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "jquery-1.7.1.min" %>
+  <%= javascript_include_tag "jquery-ui-1.8.17.custom.min" %>
+  <%= javascript_include_tag "fullcalendar" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+  <footer>
+    Copyright StanR
+  </footer>
+ </body>
+</html>

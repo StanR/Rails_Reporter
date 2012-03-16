@@ -1,0 +1,28 @@
+<h1 align="center">Records</h1>
+<center>
+<div id="day-block">
+<% @journal.group_by(&:work).each do |work, journal| %>
+<span class="work-type"><%=work%></span>
+<table class="records" cellpadding="0" cellspacing="0">
+  <tr>
+    <th>Project</th>
+    <th>Activity</th>
+    <th>Time</th>
+  </tr>
+<% @journal.each do |record| %>
+<% if work == record.work %>
+  <tr>
+    <td class="record"><%= record.project.title %></td>
+    <td class="record"><%= record.activity %></td>
+    <td class="record"><%= record.hours %>:<%= record.minutes %></td>
+  </tr>
+<% end %>
+  <% end %>
+  </table>
+  <br>
+<% end %>
+
+
+<div id="day-total-time">Total time: <strong><%= @journal.total_time %></strong></div>
+</div>
+</center>

@@ -1,0 +1,11 @@
+ <% if flash[:notice] -%>
+        <div id="notice"><%= flash[:notice] %></div>
+  <% end -%>
+
+<form action="" method="post">
+	Login:<br><input name="login" /><br>
+	Password:<br><input name="pass" /><br><br>
+	<input type="submit" value="Login">
+</form>
+<br><br>
+<%= link_to 'Registration', :action => "register" %></td>
